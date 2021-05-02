@@ -1,0 +1,236 @@
+body{
+  margin: 0;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  color: #333;
+}
+
+/* -----------------header----------------------- */
+header{
+  position:sticky;
+  top: 0;
+
+}
+
+.logo{
+  font-size: 26px;
+  padding: 18px 0px 18px 60px;
+  font-weight: bold;
+  background-color: white;
+  
+}
+
+.info a{
+  text-decoration: none;
+  color: white;  
+  margin-left: 50px;
+}
+
+.info{
+  background-color: rgb(73, 70, 70);
+  padding: 10px 0px;
+}
+/* -----------------header----------------------- */
+
+/* -----------------pick-up---------------------- */
+.pick-up{
+display: flex;
+}
+
+.container{
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.container img{
+  width: 100%;
+  height: 70%;
+}
+
+.container h1{
+  font-size: 14px;
+}
+
+.read{
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #333;
+  padding-bottom: 3px;
+}
+/* -----------------pick-up---------------------- */
+
+/* -------------main-contents-------------------- */
+
+/* ---------------airticle----------------- */
+.main-contents{
+  display:flex;
+  margin-top: 40px;
+}
+main{
+  width: auto;
+  margin-left: 20px;
+}
+
+.airticle{
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.airticle img{
+  width: 100%;
+}
+
+.airticle h1{
+  margin-top: 0;
+}
+
+.airticle h2{
+  font-size: 16px;
+}
+
+.airticle div{
+  text-align: center;
+}
+
+/* ---------------airticle---------------- */
+
+/* ------------------aside---------------- */
+
+aside{
+  width: 70%;
+  margin: 0px 20px 0px 30px;
+}
+
+.name{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.name img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.contents-name{
+  font-size: 20px;
+}
+
+.ranking{
+  text-align: center;
+}
+
+.ranking div img{
+  width: 100%;
+}
+
+.ranking div{
+  margin-bottom: 30px;
+}
+
+.ranking p{
+  margin-top: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.archive p{
+  font-size: 14px;
+  width: 100%;
+  padding:12px 0px;
+  border-top: 1px solid #333;
+  margin: 0;
+}
+/* ------------------aside---------------- */
+
+/* ------------------footer---------------- */
+footer{
+  display: flex;
+  margin: 0;
+  background-color: ghostwhite;
+  width: 100%;
+}
+
+.about{
+  flex: 1;
+  margin: 10px 20px;
+  font-size: 14px;
+}
+.about ul li{
+  position: relative;
+  padding: 0px 0px 0px 8px;
+}
+
+.about ul li::before {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 0px;
+  border: 4px solid transparent;
+  border-left: 4px solid #333;
+  content: "";
+}
+
+.about ul,
+.menu ul{
+  list-style: none;
+  padding-left:0px;
+}
+
+.menu{
+  flex: 1;
+  margin: 10px 20px;
+  font-size: 14px;
+}
+
+.menu ul{
+  border-top:1px solid #333;
+}
+
+.menu ul li{
+  border-bottom:1px solid #333;
+  padding: 12px 0px 8px 12px;
+}
+
+.twitter{
+  flex: 1;
+  margin: 10px 20px;
+}
+
+.last{
+font-size: 12px;
+  background-color: ghostwhite;
+  margin: 0;
+  padding: 10px 0px;
+  text-align: center;
+}
+/* ------------------footer---------------- */
+
+/* ------------------sp---------------- */
+
+  @media screen and (max-width: 600px) {
+    #logo{
+      font-size: 20px;
+      padding: 10px 0px 10px 30px;
+    }
+
+    #info{
+      font-size:10px;
+    }
+
+    #pick-up{
+      flex-direction: column;
+    }
+
+    #main-contents{
+     flex-direction: column; 
+    }
+
+    #footer{
+      flex-direction: column;
+    }
+  }
